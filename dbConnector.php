@@ -8,11 +8,16 @@ var $link;
     public function __construct() {
         ob_start();
   // Get the main settings from the array we just loaded
-        $host = 'localhost';
-        $db = 'capstone';
-        $user = 'root';
-        $pass = '';
-
+	 
+     //    $host = 'localhost';
+     //    $db = 'capstone';
+     // $user = 'root';
+     //   $pass = '';
+	
+	$host = 'remotemysql.com';
+        $db = 'O5AJu4LvhK';
+        $user = 'O5AJu4LvhK';
+        $pass = 'C7ZnVJOgdZ';
         // Connect to the database
         $this->link = mysqli_connect($host, $user, $pass,$db);
 
@@ -25,10 +30,16 @@ var $link;
 function DbConnector(){
 
         // Get the main settings from the array we just loaded
-        $host = 'localhost';
-        $db = 'capstone';
-        $user = 'root';
-        $pass = '';
+	//    $host = 'localhost';
+     //    $db = 'capstone';
+     // $user = 'root';
+     //   $pass = '';
+	
+	$host = 'remotemysql.com';
+        $db = 'O5AJu4LvhK';
+        $user = 'O5AJu4LvhK';
+        $pass = 'C7ZnVJOgdZ';
+	
 
         // Connect to the database
         $this->link = mysqli_connect($host, $user, $pass,$db);
